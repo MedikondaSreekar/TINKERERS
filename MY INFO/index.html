@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  
+  
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+body{
+  background-color: whitesmoke;
+
+   
+       }
+    p{outline-color:black;}
+        p.solid {outline-style: solid;}
+    h1 { 
+      background-image: url("science.jpg");
+      text-shadow: 2px 2px white;
+    background-position: top ;
+              background-color: black;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 60px;
+        color:black;
+        text-align: center;
+      
+      }
+ 
+
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+ 
+      h2{
+        background-color: black;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 30px;
+        color:white;
+        text-align:center;
+        
+      }
+      p{ 
+        }
+      
+      <script>
+function showSection(sectionId) {
+  var sections = document.getElementsByClassName("column");
+  for (var i = 0; i < sections.length; i++) {
+    if (sections[i].id === sectionId) {
+      sections[i].style.display = "block";
+    } else {
+      sections[i].style.display = "none";
+    }
+  }
+}
+        
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color:greenyellow;
+}
+#home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+  }
+
+#home-section img {
+    max-width: 100%;
+  }
+
+
+#why-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+  }
+
+  #why-me-section img {
+    max-width: 100%;
+  }
+
+  #about-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #about-me-section img {
+    max-width: 100%;
+  }
+  #conclusion-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #conclusionsection img {
+    max-width: 100%;
+  }
+</head>      
+</style>      
+<body>
+  <div class="header">
+  <h1>WHY SREEKAR?</h1>
+</div>
+   
+    
+    <ul>
+  <li><a href="#" onclick="showSection('home-section')">HOME</a></li>
+  <li><a href="#" onclick="showSection('about-me-section')">ABOUT ME</a></li>
+  <li><a href="#" onclick="showSection('why-me-section')">WHY ME</a></li>
+  <li><a href="#" onclick="showSection('conclusion-section')">CONCLUSION</a></li>
+
+</ul>
+  <div class="row">
+
+    <div id="home-section" class ="column side">
+      <img src="home.jpeg" alt="THINK LIKE TONY"style="width: 1000px;px;height: 600px;px;">  </div>
+  <div id="about-me-section" class="column side">
+    <img src="Tonystark.jpg" alt="THINK LIKE TONY"style="width: 200px;px;height: 300px;px;">
+      <h2>ABOUT ME</h2>
+    <p>NAME          : MEDIKONDA SREEKAR<br>
+     DEPARTMENT    : Computer Science And Engineering<br>
+     BATCH         : 2026<br>
+     ROLL NUMBER   : CS22BTECH11037<br>
+     THINGS I KNOW : Sketching,A bit of Coding,Gaming</p>
+  </div>
+  
+  <div id="why-me-section" class="column middle">
+    <img src="whyme.jpg" alt="THINK LIKE TONY"style="width: 200px;px;height: 300px;px;">
+    <h2>WHY ME</h2>
+    <p> DESIGNING           : I can sketch pretty good and this help in visualization and designing any topic we have in the mind.<br>
+    Coding              : I am good at WEB DEV languages!(HTML,CSS,JS) ,C language,Java(a bit)<br>
+    COMMUNICATION SKILLS: Gamers have the best communication skills and I think I can be a good communicator in and out of the group or club.
+    </p>
+  </div>
+  
+  <div id="conclusion-section" class="column side">
+    <img src="conclusion.jpg" alt=" THINK LIKE TONY"style="width 200px;px;height: 300px;px;">
+    <h2>CONCLUSION</h2>
+    <p>I hope u found the information required to get me into this club <br>
+    I  am sure that if I get a chance then I will make it a better place to think,learn and explore!</p>
+  </div>
+</div>
+
+
+    <script>
+  function showSection(sectionId) {
+    var sections = document.getElementsByClassName("column");
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i].id === sectionId) {
+        sections[i].style.display = "block";
+      } else {
+        sections[i].style.display = "none";
+      }
+    }
+  }
+  
+  
+  showSection('about-me-section');
+</script>
+
+</body>
+</html> 
